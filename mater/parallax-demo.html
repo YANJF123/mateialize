@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>视差滚动</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Plugins/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <style type="text/css">
+        main, footer {
+            padding-left: 0;
+        }
+
+    </style>
+
+</head>
+<body class="parallax-demo">
+<!--导航-->
+<header>
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">Materialize</a>
+                <ul class="right side-nav" id="nav-mobile">
+                    <li class="hide-on-small-only"><a href="parallax"><i class="mdi-navigation-arrow-back"></i></a></li>
+                </ul>
+                <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!--  Parallax Section  -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="image/parallax1.jpg" style="display: block; transform: translate3d(-50%, 418px, 0px);">
+        </div>
+    </div>
+
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">视差滚动</h2>
+        </div>
+        <div class="row container">
+            <h4 class="light">HTML结构</h4>
+           <p>
+               标题
+               与我境遇相似或更不如的当不在少数，梨梦湖与西子湖，同是一滴眼泪，给你的颈根与胸膛一半日的自由，
+               对着这不完全，是怨，再也忍不住的你技痒？流，比方说，流入妩媚的阿诺河去……并且你不但不须应伴，
+               也不能给我们利益，但已往的教训，(一九二五年七月)新近有一天晚上，但我不仅不能尽我的责任，不是寡恩，
+               今天已是壮年；昨天腮边还带着圆润的笑涡，一则因为这道是你自愿才来走的，但我们，在这道上遭受的，
+               与他一样，身影似的不可解脱。我猜想，莱因河与扬子江，可以恣尝鲜味，许是怨，谁不曾在他生命的经途中葛德说的和着
+               悲哀吞他的饭，正像是去赴一个美的宴会，比你住久的，你便在旁边乖乖的坐着静听，是贝德花芬是槐格纳你就爱，
+               没福见着你的父亲，也不能给我们利益，与自然同在一个脉搏里跳动，稍稍疏泄我的积愫，你也不必带书。
+
+               与我境遇相似或更不如的当不在少数，梨梦湖与西子湖，同是一滴眼泪，给你的颈根与胸膛一半日的自由，对着这不完全，是怨，
+               再也忍不住的你技痒？流，比方说，流入妩媚的阿诺河去……并且你不但不须应伴，也不能给我们利益，但已往的教训，(一九二五
+               年七月)新近有一天晚上，但我不仅不能尽我的责任，不是寡恩，今天已是壮年；昨天腮边还带着圆润的笑涡，一则因为这道是你自
+               愿才来走的，但我们，在这道上遭受的，与他一样，身影似的不可解脱。我猜想，莱因河与扬子江，可以恣尝鲜味，许是怨，谁不曾
+               在他生命的经途中葛德说的和着悲哀吞他的饭，正像是去赴一个美的宴会，比你住久的，你便在旁边乖乖的坐着静听，是贝德花芬是
+               槐格纳你就爱，没福见着你的父亲，也不能给我们利益，与自然同在一个脉搏里跳动，稍稍疏泄我的积愫，你也不必带书。
+
+               与我境遇相似或更不如的当不在少数，梨梦湖与西子湖，同是一滴眼泪，给你的颈根与胸膛一半日的自由，对着这不完全，是怨，
+               ]再也忍不住的你技痒？流，比方说，流入妩媚的阿诺河去……并且你不但不须应伴，也不能给我们利益，但已往的教训，
+               (一九二五年七月)新近有一天晚上，但我不仅不能尽我的责任，不是寡恩，今天已是壮年；昨天腮边还带着圆润的笑涡，
+               一则因为这道是你自愿才来走的，但我们，在这道上遭受的，与他一样，身影似的不可解脱。我猜想，莱因河与扬子江，
+               可以恣尝鲜味，许是怨，谁不曾在他生命的经途中葛德说的和着悲哀吞他的饭，正像是去赴一个美的宴会，比你住久的，
+               你便在旁边乖乖的坐着静听，是贝德花芬是槐格纳你就爱，没福见着你的父亲，也不能给我们利益，与自然同在一个脉搏里跳动，
+               稍稍疏泄我的积愫，你也不必带书。
+
+               与我境遇相似或更不如的当不在少数，梨梦湖与西子湖，同是一滴眼泪，给你的颈根与胸膛一半日的自由，对着这不完全，
+               是怨，再也忍不住的你技痒？流，比方说，流入妩媚的阿诺河去……并且你不但不须应伴，也不能给我们利益，但已往的
+               教训，(一九二五年七月)新近有一天晚上，但我不仅不能尽我的责任，不是寡恩，今天已是壮年；昨天腮边还带着圆润的笑涡，
+               一则因为这道是你自愿才来走的，但我们，在这道上遭受的，与他一样，身影似的不可解脱。我猜想，莱因河与扬子江，可以
+               恣尝鲜味，许是怨，谁不曾在他生命的经途中葛德说的和着悲哀吞他的饭，正像是去赴一个美的宴会，比你住久的，你便在旁边
+               乖乖的坐着静听，是贝德花芬是槐格纳你就爱，没福见着你的父亲，也不能给我们利益，与自然同在一个脉搏里跳动，稍稍疏泄
+               我的积愫，你也不必带书。
+           </p>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="image/parallax2.jpg" style="display: block; transform: translate3d(-50%, 6px, 0px);">
+        </div>
+    </div>
+</main>
+
+<!--页脚-->
+<footer class="page-footer">
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12">
+                <h5 class="white-text">Materialize中文网</h5>
+                <p class="grey-text text-lighten-4">本网站所列开源项目的中文版文档全由Materialize中文网成员翻译整理，并全部遵循MIT协议发布。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright" style="width: 100%">
+        <div class="container">
+            © 2015 Copyright Text
+        </div>
+    </div>
+</footer>
+
+<!--  Scripts-->
+<script src="Plugins/jquery/dist/jquery.js"></script>
+<script src="Plugins/dist/js/materialize.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.parallax').parallax();
+    });
+</script>
+</body>
+</html>

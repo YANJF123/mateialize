@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title> materialize de css</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Plugins/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <style>
+        .col.grid-example {
+            border: 1px solid #eee;
+            margin: 7px 0;
+            line-height: 50px;
+            font-size: 28px;
+            background-color: tomato;
+            color: white;
+            padding: 0;
+
+        }
+
+        .grid-example1 {
+            border: 1px solid #eee;
+            margin: 7px 0;
+            line-height: 50px;
+            font-size: 28px;
+            background-color: tomato;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!--面板1-->
+    <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
+    <!--面板2-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2">This is a card panel with dark blue text</span>
+    </div>
+    <!--格-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2">再小的屏幕下都是一行显示，取决与grid-example类的padding属性，设为零、不换行，非零换行显示</span>
+        <div class="row">
+            <div class="col s1 center grid-example">1</div>
+            <div class="col s1 center grid-example">2</div>
+            <div class="col s1 center grid-example">3</div>
+            <div class="col s1 center grid-example">4</div>
+            <div class="col s1 center grid-example">5</div>
+            <div class="col s1 center grid-example">6</div>
+            <div class="col s1 center grid-example">7</div>
+            <div class="col s1 center grid-example">8</div>
+            <div class="col s1 center grid-example">9</div>
+            <div class="col s1 center grid-example">10</div>
+            <div class="col s1 center grid-example">11</div>
+            <div class="col s1 center grid-example">12</div>
+
+            <div class="col s1 center grid-example1">1</div>
+            <div class="col s1 center grid-example1">2</div>
+            <div class="col s1 center grid-example1">3</div>
+            <div class="col s1 center grid-example1">4</div>
+            <div class="col s1 center grid-example1">5</div>
+            <div class="col s1 center grid-example1">6</div>
+            <div class="col s1 center grid-example1">7</div>
+            <div class="col s1 center grid-example1">8</div>
+            <div class="col s1 center grid-example1">9</div>
+            <div class="col s1 center grid-example1">10</div>
+            <div class="col s1 center grid-example1">11</div>
+            <div class="col s1 center grid-example1">12</div>
+        </div>
+    </div>
+
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>列位于行内</h5> 所有列必须包含在行内，并且必须将col类添加到内部div以使其成为列</span>
+
+        <div class="row">
+            <div class="col s12 grid-example center">此div在所有屏幕尺寸上为12列宽</div>
+            <div class="col s6 grid-example center">6列（一半）</div>
+            <div class="col s6 grid-example center">6列（一半）</div>
+        </div>
+    </div>
+    <!--偏移 -->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>偏移</h5>在需要偏移的列上添加offset-s2，s—小屏幕（small）、m—中等屏幕(medium)、l—大屏幕（large）规则向上传播</span>
+
+        <div class="row">
+            <div class="col s12 grid-example center">此div在所有屏幕尺寸上为12列宽</div>
+            <div class="col s6 grid-example center offset-m6">6列 （一半） 右</div>
+        </div>
+    </div>
+    <!--推和拉-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>推和拉</h5>push-s2或pull-s2，s—小屏幕（small）、m—中等屏幕(medium)、l—大屏幕（large）</span>
+
+        <div class="row">
+            <div class="col s7 push-s5 grid-example1"><span class="flow-text">Tcolumns.</span></div>
+            <div class="col s5 pull-s7 grid-example1"><span class="flow-text">d to the left by 7-columns.</span></div>
+        </div>
+    </div>
+    <!--创建布局-->
+    <div class="card-panel">
+        <div class="row">
+            <div class="col s6"></div>
+            <div class="col s6"></div>
+
+        </div>
+
+        <span class="blue-text text-darken-2"><h5>创建布局</h5>push-s2或pull-s2，s—小屏幕（small）、m—中等屏幕(medium)、l—大屏幕（large）</span>
+        <div class="section">
+            <h5>Section 1</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Section 1</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Section 2</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+    </div>
+    <!--增加响应性-->
+    <div class="card-panel">
+    <span class="blue-text text-darken-2">
+    <h5>增加响应性</h5>因为规则向上传播基本上说"col s12 m12 l12"。但通过明确定义大小，我们可以使我们的网站更加灵敏。
+    </span>
+        <div class="row">
+            <div class="grid-example col s12"><span class="flow-text">I am always full-width (col s12)</span></div>
+            <div class="grid-example col s12 m6"><span class="flow-text">I am full-width on mobile (col s12 m6)</span>
+            </div>
+        </div>
+    </div>
+    <!--更响应的网格示例-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>更响应的网格示例</h5></span>
+        <div class="row">
+            <div class="col s12 blue  center"><p>s12</p></div>
+
+        </div>
+        <div class="row">
+            <div class="col s12 m4 l2 teal center" style="border: 1px solid #FFFFFF"><p>s12 m4</p></div>
+            <div class="col s12 m4 l8 teal center" style="border: 1px solid #FFFFFF"><p>s12 m4</p></div>
+            <div class="col s12 m4 l2 teal center" style="border: 1px solid #FFFFFF"><p>s12 m4</p></div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l3 purple center" style="border: 1px solid #FFFFFF"><p>s12 m6 l3</p></div>
+            <div class="col s12 m6 l3 purple center" style="border: 1px solid #FFFFFF"><p>s12 m6 l3</p></div>
+            <div class="col s12 m6 l3 purple center" style="border: 1px solid #FFFFFF"><p>s12 m6 l3</p></div>
+            <div class="col s12 m6 l3 purple center" style="border: 1px solid #FFFFFF"><p>s12 m6 l3</p></div>
+        </div>
+    </div>
+    <!--响应侧导航布局-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2">响应侧导航布局</span>
+        <!-- Navbar goes here -->
+
+        <!-- Page Layout here -->
+        <div class="row">
+
+            <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+                Grey navigation panel
+
+                This content will be:
+                3-columns-wide on large screens,
+                4-columns-wide on medium screens,
+                12-columns-wide on small screens
+
+            </div>
+
+            <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+                Teal page content
+
+                This content will be:
+                9-columns-wide on large screens,
+                8-columns-wide on medium screens,
+                12-columns-wide on small screens
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--对齐-->
+    <div class="card-panel">
+        <!--标题-->
+        <span class="blue-text text-darken-2"><h5>对齐</h5>垂直对齐 valign-wrapper，</span>
+        <div class="valign-wrapper" style="max-width: 600px;height: 400px; background: #f5f5f5;">
+            <h5 class="valign center-align" style="width: 100%">valign 垂直对齐 在外部包裹容器中使用valign-wrapper，就能保持内部的元素进行垂直对齐</h5>
+        </div>
+
+        <span class="blue-text text-darken-2">左对齐</span>
+        <div style="max-width:600px;background: #f5f5f5;">
+            <h5 class=" left-align" style="width: 100%">左对齐</h5>
+        </div>
+
+        <span class="blue-text text-darken-2">右对齐</span>
+        <div style="max-width:600px;background: #f5f5f5;">
+            <h5 class="right-align" style="width: 100%">左对齐</h5>
+        </div>
+
+    </div>
+    <!--隐藏-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>隐藏</h5></span>
+        <div class="hide-on-small-only" style="background-color: tomato">我将在手机屏幕下隐藏</div>
+        <div class="hide-on-med-only" style="background-color: tomato">我将在平板屏幕下隐藏</div>
+        <div class="hide-on-med-and-down" style="background-color: tomato">我将在平板以及下尺寸屏幕下隐藏</div>
+        <div class="hide-on-med-and-up" style="background-color: tomato">我将在平板及以上尺寸屏幕下隐藏</div>
+        <div class="hide-on-large-only" style="background:tomato;">我将在电脑屏幕下隐藏</div>
+    </div>
+    <!--省略-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>省略</h5></span>
+        <div style="max-width: 500px;background:tomato">
+            <div class="truncate" style="width: 100px">我的就住着个屯，我是这个屯土生土长的人</div>
+        </div>
+    </div>
+    <!--图片-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>图片</h5></span>
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="image/background1.jpg" alt="" class="circle responsive-img">
+                        <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+          <span class="black-text">
+            This is a square image. Add the "circle" class to it to make it appear circular.
+          </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--视频-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>视频</h5></span>
+        <div class="video-container">
+            <iframe width="853" height="480" src="http://player.youku.com/embed/XNzMxNzY0NjYw" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <!--阴影-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>阴影</h5></span>
+        <div class="row">
+            <div class="col s12 m2">
+                <p style="width: 125px;height: 125px;background: #26A69A;margin: 20px auto" class="z-depth-1">
+                    z-depth-1</p>
+            </div>
+            <div class="col s12 m2">
+                <p style="width: 125px;height: 125px;background: #26A69A;margin: 20px auto" class="z-depth-2">
+                    z-depth-2</p>
+            </div>
+            <div class="col s12 m2">
+                <p style="width: 125px;height: 125px;background: #26A69A;margin: 20px auto" class="z-depth-3">
+                    z-depth-3</p>
+            </div>
+            <div class="col s12 m2">
+                <p style="width: 125px;height: 125px;background: #26A69A;margin: 20px auto" class="z-depth-4">
+                    z-depth-4</p>
+            </div>
+            <div class="col s12 m2">
+                <p style="width: 125px;height: 125px;background: #26A69A;margin: 20px auto" class="z-depth-5">
+                    z-depth-5</p>
+            </div>
+        </div>
+    </div>
+    <!--表格-->
+    <div class="card-panel">
+        <span class="blue-text text-darken-2"><h5>表格</h5></span>
+        <table class="striped hoverable centered responsive-table bordered">
+            <thead>
+            <tr>
+                <th data-field="id">表格</th>
+                <th data-field="name">类型</th>
+                <th data-field="price">效果</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>表格</td>
+                <td>普通表格</td>
+                <td>普通表格</td>
+            </tr>
+            <tr>
+                <td>表格1</td>
+                <td>在table标签上应用类（class="bordered"）</td>
+                <td>为表格添加边框</td>
+            </tr>
+            <tr>
+                <td>表格2</td>
+                <td>在table标签上应用class="striped"</td>
+                <td>使表格具有条纹效果。实质是奇偶行颜色不同</td>
+            </tr>
+            <tr>
+                <td>表格3</td>
+                <td>在table标签上应用class="hoverable"。</td>
+                <td>使鼠标悬停/划过时高亮</td>
+            </tr>
+            <tr>
+                <td>表格4</td>
+                <td>在table标签上应用class="centered"</td>
+                <td>使单元格中的文字居中。</td>
+            </tr>
+            <tr>
+                <td>表格4</td>
+                <td>在table标签上应用class="responsive-table"</td>
+                <td>在小屏幕设备上具有滚动条。</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card-panel">
+        <div class="flow-text">
+            <p>与我境遇相似或更不如的当不在少数，梨梦湖与西子湖，同是一滴眼泪，给你的颈根与胸膛一半日的自由，
+                对着这不完全，是怨，再也忍不住的你技痒？流，比方说，流入妩媚的阿诺河去……并且你不但不须应伴，也不能给我们利益，但已往的教训，(一九二五年七月)新近有一天晚上，
+                但我不仅不能尽我的责任，不是寡恩，今天已是壮年；昨天腮边还带着圆润的笑涡，一则因为这道是你自愿才来走的，但我们，在这道上遭受的，与他一样，身影似的不可解脱。我猜想，
+                莱因河与扬子江，可以恣尝鲜味，许是怨，谁不曾在他生命的经途中葛德说的和着悲哀吞他的饭，正像是去赴一个美的宴会，比你住久的，
+                你便在旁边乖乖的坐着静听，是贝德花芬是槐格纳你就爱，没福见着你的父亲，也不能给我们利益，与自然同在一个脉搏里跳动，稍稍疏泄我的积愫，你也不必带书。</p>
+            <p>讲，许是恨，何尝不赤心的爱我；但他们的爱却正是造成我痛苦的原因；我自己也何尝不笃爱我的亲亲，假如你长大的话，你便盖没了你的小耳，光亮的天真，打搅你的清听！
+                比如去一果子园，：在中国音乐最饥荒的日子，活泼的灵魂；你来人间真像是短期的作客，这无形迹的最高等教育便永远是你的名分，给你的颈根与胸膛一半日的自由，但我的情愫！</p>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--  Scripts-->
+<script src="Plugins/jquery/dist/jquery.js"></script>
+<script src="Plugins/dist/js/materialize.js"></script>
+</body>
+</html>
